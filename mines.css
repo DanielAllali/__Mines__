@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "regular";
+}
+
+@font-face {
+    font-family: "regular";
+    src: url("./fonts/Oswald-VariableFont_wght.ttf");
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./images/grassBgc.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* game */
+#container {
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+
+#container h1 {
+    color: white;
+}
+
+#points {
+    color: green;
+}
+
+#container table {
+    width: 600px;
+    height: 600px;
+}
+
+#container table td {
+    cursor: pointer;
+    background-color: #000;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#container table tr {
+    display: grid;
+    grid-template-columns: repeat(6, 95px);
+    grid-template-rows: 95px;
+}
+
+#container table td:hover {
+    background-color: #242424;
+}
+
+/* wrapper */
+#wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 20;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+#winLosePoints {
+    color: white;
+}
